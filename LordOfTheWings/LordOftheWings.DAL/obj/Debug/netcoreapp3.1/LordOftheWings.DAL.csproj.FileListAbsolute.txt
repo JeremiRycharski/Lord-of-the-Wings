@@ -1,0 +1,12 @@
+C:\Users\Chasmer\Documents\GitHub\Lord-of-the-Wings\LordOfTheWings\LordOftheWings.DAL\bin\Debug\netcoreapp3.1\LordOftheWings.DAL.deps.json
+C:\Users\Chasmer\Documents\GitHub\Lord-of-the-Wings\LordOfTheWings\LordOftheWings.DAL\bin\Debug\netcoreapp3.1\LordOftheWings.DAL.dll
+C:\Users\Chasmer\Documents\GitHub\Lord-of-the-Wings\LordOfTheWings\LordOftheWings.DAL\bin\Debug\netcoreapp3.1\LordOftheWings.DAL.pdb
+C:\Users\Chasmer\Documents\GitHub\Lord-of-the-Wings\LordOfTheWings\LordOftheWings.DAL\obj\Debug\netcoreapp3.1\LordOftheWings.DAL.csprojAssemblyReference.cache
+C:\Users\Chasmer\Documents\GitHub\Lord-of-the-Wings\LordOfTheWings\LordOftheWings.DAL\obj\Debug\netcoreapp3.1\LordOftheWings.DAL.AssemblyInfoInputs.cache
+C:\Users\Chasmer\Documents\GitHub\Lord-of-the-Wings\LordOfTheWings\LordOftheWings.DAL\obj\Debug\netcoreapp3.1\LordOftheWings.DAL.AssemblyInfo.cs
+C:\Users\Chasmer\Documents\GitHub\Lord-of-the-Wings\LordOfTheWings\LordOftheWings.DAL\obj\Debug\netcoreapp3.1\LordOftheWings.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Chasmer\Documents\GitHub\Lord-of-the-Wings\LordOfTheWings\LordOftheWings.DAL\obj\Debug\netcoreapp3.1\LordOftheWings.DAL.dll
+C:\Users\Chasmer\Documents\GitHub\Lord-of-the-Wings\LordOfTheWings\LordOftheWings.DAL\obj\Debug\netcoreapp3.1\LordOftheWings.DAL.pdb
+C:\Users\Chasmer\Documents\GitHub\Lord-of-the-Wings\LordOfTheWings\LordOftheWings.DAL\bin\Debug\netcoreapp3.1\LordOftheWings.DAL.runtimeconfig.json
+C:\Users\Chasmer\Documents\GitHub\Lord-of-the-Wings\LordOfTheWings\LordOftheWings.DAL\bin\Debug\netcoreapp3.1\LordOftheWings.DAL.runtimeconfig.dev.json
+C:\Users\Chasmer\Documents\GitHub\Lord-of-the-Wings\LordOfTheWings\LordOftheWings.DAL\obj\Debug\netcoreapp3.1\LordOftheWings.DAL.genruntimeconfig.cache
