@@ -1,4 +1,4 @@
-using LordOftheWings.DAL.Context;
+using LordOfTheWings.DAL.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -15,9 +15,13 @@ namespace LordOfTheWings
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private const string _connectionStringName = "AppConnection";
+        public IWebHostEnvironment Environment {get;}
+
+        public Startup(IConfiguration configuration, IWebHostEnvironment environment)
         {
             Configuration = configuration;
+            Environment = environment;
         }
 
         public IConfiguration Configuration { get; }
@@ -25,12 +29,14 @@ namespace LordOfTheWings
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<MyAppContext>((options) =>
-            {
-                options.UseSqlServer(Configuration.GetConnectionString("AppConnection"));
-            });
+            services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
 
-            services.AddRazorPages();
+            services.AddControllersWithViews();
+        }
+
+        protected virtual void ConfigureDatabase(DbContextOptionsBuilder ctxBuilder)
+        {
+            ctxBuilder.UseSqlServer(Configuration.GetConnectionString(_connectionStringName));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,7 +48,7 @@ namespace LordOfTheWings
             }
             else
             {
-                app.UseExceptionHandler("/Error");
+                app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
@@ -52,11 +58,15 @@ namespace LordOfTheWings
 
             app.UseRouting();
 
+            app.UseCors(options => options.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

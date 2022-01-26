@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 
-namespace LordOftheWings.DAL.Models
+namespace LordOfTheWings.DAL.Models
 {
-    [Table("Reservation")]
     public class Reservation
     {
-        public long ID { get; set; }
-        public int PeopleCount { get; set; }
+        [Display(Name = "Table Number")]
+        public int TableNumber { get; set; }
+        [Display(Name = "Reserved by")]
         public string ReservedBy { get; set; }
-        public int ContactNumber { get; set; }
-        public long TableID { get; set; }
-
-        public virtual Table Table { get; set; }
+        [Display(Name = "Reservation date")]
+        public string ReservationDate { get; set; }
+        [Display(Name = "Reservation time")]
+        public string ReservationTime { get; set; }
     }
 }

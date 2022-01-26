@@ -4,14 +4,14 @@
     "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOfTheWings\\LordOfTheWings.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOftheWings.DAL\\LordOftheWings.DAL.csproj": {
+    "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOfTheWings.DAL\\LordOfTheWings.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOftheWings.DAL\\LordOftheWings.DAL.csproj",
-        "projectName": "LordOftheWings.DAL",
-        "projectPath": "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOftheWings.DAL\\LordOftheWings.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOfTheWings.DAL\\LordOfTheWings.DAL.csproj",
+        "projectName": "LordOfTheWings.DAL",
+        "projectPath": "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOfTheWings.DAL\\LordOfTheWings.DAL.csproj",
         "packagesPath": "C:\\Users\\Chasmer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOftheWings.DAL\\obj\\",
+        "outputPath": "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOfTheWings.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,33 +44,13 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Google.Cloud.BigQuery.V2": {
               "target": "Package",
-              "version": "[5.0.13, )"
+              "version": "[2.3.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Google.Cloud.Firestore": {
               "target": "Package",
-              "version": "[5.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.13, )"
-            },
-            "Microsoft.Extensions.Configuration.Json": {
-              "target": "Package",
-              "version": "[6.0.0, )"
-            },
-            "System.Configuration.ConfigurationManager": {
-              "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[2.5.0, )"
             }
           },
           "imports": [
@@ -120,8 +100,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOftheWings.DAL\\LordOftheWings.DAL.csproj": {
-                "projectPath": "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOftheWings.DAL\\LordOftheWings.DAL.csproj"
+              "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOfTheWings.DAL\\LordOfTheWings.DAL.csproj": {
+                "projectPath": "C:\\Users\\Chasmer\\Documents\\GitHub\\Lord-of-the-Wings\\LordOfTheWings\\LordOfTheWings.DAL\\LordOfTheWings.DAL.csproj"
               }
             }
           }
@@ -136,15 +116,19 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
-              "target": "Package",
-              "version": "[3.1.13, )"
-            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [
